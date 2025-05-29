@@ -16,12 +16,15 @@
 - Créer un environnement à partir d’un fichier YAML: conda env create -f environnement.yaml
 - Exporter un environnement (fichier YAML): conda env export > environnement.yaml
 
-## Essentiel command django-admin
-django-admin startproject monsite:	Crée un nouveau projet Django nommé monsite
-django-admin startapp monapp	Crée une nouvelle application Django dans le projet
-django-admin runserver	Démarre un serveur de développement local
-django-admin makemigrations	Crée des fichiers de migration à partir des changements dans les modèles
-django-admin migrate	Applique les migrations à la base de données
-django-admin createsuperuser	Crée un compte administrateur pour le site d’admin
-django-admin shell	Lance un shell Python avec le contexte Django chargé
-django-admin check	Vérifie le projet pour détecter des erreurs potentielles
+## Essentiel command django-admin and python manage.py
+django-admin startproject monsite   (identique)	                            Crée un nouveau projet Django
+django-admin startapp monapp	    python manage.py startapp monapp	    Crée une nouvelle application
+django-admin runserver	            python manage.py runserver	            Lance le serveur de développement
+django-admin makemigrations	        python manage.py makemigrations	        Génère les fichiers de migration
+django-admin migrate	            python manage.py migrate	            Applique les migrations à la base de données
+django-admin createsuperuser	    python manage.py createsuperuser	    Crée un compte administrateur
+django-admin shell	                python manage.py shell	                Ouvre une console Python avec Django chargé
+django-admin check	                python manage.py check	                Vérifie le projet pour détecter des erreurs
+django-admin test	                python manage.py test	                Exécute les tests unitaires
+django-admin loaddata fichier.json	python manage.py loaddata fichier.json	Charge des données dans la base
+django-admin dumpdata	            python manage.py dumpdata	            Exporte les données sous forme JSON
